@@ -1,0 +1,19 @@
+# Built docs.
+docs/_build/
+
+# Emacs auto-save files
+\#*#
+
+# Python Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info
+
+# Ignore .env file
+.env
+
+# Others
+.cache
+*.tar.gz

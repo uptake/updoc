@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Updoc</title>
+        <link rel="stylesheet" href="static/index.css">
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/vue.resource/1.3.1/vue-resource.min.js"></script>
+    </head>
+    <body>
+        <div id='top-bar'>
+            <div class='bar-text'>
+                <div id="title">
+                    Documentation Repository
+                    <a class="readme-link" href="static/readme/index.html">Readme</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="height: 100%" id="app">
+            </br>
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="sizing-addon1">Available Documentation:</span>
+                    <input v-model="filterText"
+                           class="form-control"
+                           placeholder="search"
+                           aria-describedby="sizing-addon1"
+                           @keydown.enter="navigateTopDoc()"
+                           autofocus>
+                </div>
+            </br>
+            <div>
+                <category-item v-for="item in searchDocumentNames(documentList)" v-bind:category="item"></category-item>
+            </div>
+        </div>
+        <script src="static/app.js"></script>
+    </body>
+</html>
