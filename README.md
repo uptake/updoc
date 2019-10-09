@@ -17,7 +17,7 @@ location and easily categorize and share it.
 1. Build the docker image
 
 ```
-git clone https://github.com/UptakeOpenSource/updoc
+git clone https://github.com/uptake/updoc
 cd updoc
 docker build -t updoc .
 ```
