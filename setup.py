@@ -13,10 +13,10 @@ with io.open('README.md', 'rt', encoding='utf8') as f:
 setup(
     name='docserver',
     version=VERSION['__version__'],
-    url='http://github.com/UptakeOpenSource/updoc',
+    url='http://github.com/uptake/updoc',
     license='BSD 3-Clause',
-    maintainer='Kyle Szela',
-    maintainer_email='kyle.szela@uptake.com',
+    maintainer='Hao-En Tsui',
+    maintainer_email='opensource@uptake.com',
     description='An application for serving documentation in a cloud environment.',
     long_description=readme,
     packages=find_packages(),
