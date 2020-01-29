@@ -1,10 +1,13 @@
 # Updoc
 
+- [What's `UpDoc`?](#whats-updoc)
 - [Quick Start](#quick-start)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
+
+## What's `UpDoc`?
 
 A self hosted readthedocs.io-like documentation repository and hosting service.  The problem that this attempts to 
 solve is that there aren't many easy to use solutions to store and host simple static html.  There are numerous 
@@ -87,3 +90,5 @@ The environment file can then be sourced when running from docker:
 ```
 docker run --name doc --rm -d -p 8080:80 --env-file=.env updoc
 ```
+
+That's all folks! If you find this project helpful, please consider giving us a star. If you have any comments or questions, please feel free to raise an [issue](https://github.com/uptake/updoc/issues). Contributions are greatly appreciated! 
